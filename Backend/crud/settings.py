@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders'
+    'corsheaders',
     'api',
     
     
@@ -56,6 +56,10 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173"
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:5173'
 ]
 
 ROOT_URLCONF = 'crud.urls'
